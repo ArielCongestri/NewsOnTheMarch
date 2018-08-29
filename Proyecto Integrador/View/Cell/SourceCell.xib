@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="sourceTableViewCell" rowHeight="154" id="YtD-6K-J44" customClass="SourcesTableViewCell" customModule="Proyecto_Integrador" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="480" height="130"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="YtD-6K-J44" id="eqf-vx-u9b">
+                <rect key="frame" x="0.0" y="0.0" width="480" height="129.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="yvE-z7-q34">
+                        <rect key="frame" x="12" y="8" width="458" height="121.5"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="h7K-2f-W2Y">
+                                <rect key="frame" x="0.0" y="0.0" width="458" height="22.5"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="SourceLabel" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="h1r-Sg-hvV">
+                                        <rect key="frame" x="0.0" y="0.0" width="435.5" height="22.5"/>
+                                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="18"/>
+                                        <color key="textColor" red="0.14901960784313725" green="0.14901960784313725" blue="0.14901960784313725" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fJ3-QU-reo">
+                                        <rect key="frame" x="435.5" y="0.0" width="22.5" height="22.5"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="22.5" id="VEw-qP-chZ"/>
+                                            <constraint firstAttribute="width" constant="22.5" id="aTi-nO-WDw"/>
+                                            <constraint firstAttribute="height" constant="22" id="sf1-Cx-Sem"/>
+                                            <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="22.5" id="zbb-cq-yJR"/>
+                                        </constraints>
+                                        <state key="normal" image="readLater">
+                                            <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="savesourceButtonPressed:" destination="YtD-6K-J44" eventType="touchUpInside" id="VKj-dS-Rk3"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="fJ3-QU-reo" firstAttribute="top" secondItem="h7K-2f-W2Y" secondAttribute="top" id="5Yg-NC-1SB"/>
+                                    <constraint firstAttribute="bottom" secondItem="h1r-Sg-hvV" secondAttribute="bottom" id="Dmf-D9-LEL"/>
+                                    <constraint firstItem="fJ3-QU-reo" firstAttribute="leading" secondItem="h1r-Sg-hvV" secondAttribute="trailing" id="KVp-WK-YLY"/>
+                                    <constraint firstItem="h1r-Sg-hvV" firstAttribute="top" secondItem="h7K-2f-W2Y" secondAttribute="top" id="LFm-vv-SFy"/>
+                                    <constraint firstItem="h1r-Sg-hvV" firstAttribute="leading" secondItem="h7K-2f-W2Y" secondAttribute="leading" id="TwE-fl-Lsp"/>
+                                    <constraint firstAttribute="trailing" secondItem="fJ3-QU-reo" secondAttribute="trailing" id="XeU-vA-Nel"/>
+                                </constraints>
+                            </stackView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Description" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XgH-Cd-99i">
+                                <rect key="frame" x="0.0" y="22.5" width="458" height="99"/>
+                                <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="12"/>
+                                <color key="textColor" red="0.4756349325" green="0.47564673419999998" blue="0.47564041610000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                                <size key="shadowOffset" width="0.0" height="0.0"/>
+                            </label>
+                        </subviews>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="XgH-Cd-99i" secondAttribute="trailing" id="mxV-gQ-z8z"/>
+                            <constraint firstItem="XgH-Cd-99i" firstAttribute="leading" secondItem="yvE-z7-q34" secondAttribute="leading" id="tiu-YI-smn"/>
+                            <constraint firstItem="XgH-Cd-99i" firstAttribute="top" secondItem="h7K-2f-W2Y" secondAttribute="bottom" id="yHz-rl-Yk0"/>
+                        </constraints>
+                    </stackView>
+                </subviews>
+                <color key="backgroundColor" red="0.98039215686274506" green="0.98039215686274506" blue="0.98039215686274506" alpha="1" colorSpace="calibratedRGB"/>
+                <constraints>
+                    <constraint firstAttribute="bottom" secondItem="yvE-z7-q34" secondAttribute="bottom" id="46k-PX-gg8"/>
+                    <constraint firstItem="yvE-z7-q34" firstAttribute="leading" secondItem="eqf-vx-u9b" secondAttribute="leading" constant="12" id="e9T-zu-7n0"/>
+                    <constraint firstItem="yvE-z7-q34" firstAttribute="top" secondItem="eqf-vx-u9b" secondAttribute="top" constant="8" id="eyC-TY-RQp"/>
+                    <constraint firstAttribute="trailing" secondItem="yvE-z7-q34" secondAttribute="trailing" constant="10" id="nq6-R1-boH"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="descriptionLabel" destination="XgH-Cd-99i" id="HGl-LL-mCm"/>
+                <outlet property="saveSourceButton" destination="fJ3-QU-reo" id="BcF-Jh-Ypm"/>
+                <outlet property="sourceLabel" destination="h1r-Sg-hvV" id="iKH-xf-aPz"/>
+            </connections>
+            <point key="canvasLocation" x="-131" y="-2"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="readLater" width="512" height="512"/>
+    </resources>
+</document>

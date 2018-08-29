@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="fBY-KD-G0G">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="cKh-bi-iZX">
+            <objects>
+                <viewController id="fBY-KD-G0G" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="38m-bV-ZSh">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="SplashScreen_05" translatesAutoresizingMaskIntoConstraints="NO" id="a9o-Yy-cDs">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="a9o-Yy-cDs" firstAttribute="leading" secondItem="le7-0r-X3j" secondAttribute="leading" id="679-JF-Lj6"/>
+                            <constraint firstItem="a9o-Yy-cDs" firstAttribute="top" secondItem="38m-bV-ZSh" secondAttribute="top" id="8tU-tg-zQk"/>
+                            <constraint firstItem="a9o-Yy-cDs" firstAttribute="top" secondItem="38m-bV-ZSh" secondAttribute="top" id="ASH-8M-lFC"/>
+                            <constraint firstItem="a9o-Yy-cDs" firstAttribute="leading" secondItem="le7-0r-X3j" secondAttribute="leading" id="Lq5-77-XwZ"/>
+                            <constraint firstItem="a9o-Yy-cDs" firstAttribute="bottom" secondItem="le7-0r-X3j" secondAttribute="bottom" id="MAb-MH-zf0"/>
+                            <constraint firstItem="a9o-Yy-cDs" firstAttribute="leading" secondItem="le7-0r-X3j" secondAttribute="leading" id="WYK-6o-GPL"/>
+                            <constraint firstItem="a9o-Yy-cDs" firstAttribute="trailing" secondItem="le7-0r-X3j" secondAttribute="trailing" id="bcc-5t-ezn"/>
+                            <constraint firstItem="a9o-Yy-cDs" firstAttribute="top" secondItem="38m-bV-ZSh" secondAttribute="top" id="f2s-ea-NUL"/>
+                            <constraint firstItem="a9o-Yy-cDs" firstAttribute="bottom" secondItem="le7-0r-X3j" secondAttribute="bottom" id="gR9-QF-zjy"/>
+                            <constraint firstItem="a9o-Yy-cDs" firstAttribute="trailing" secondItem="le7-0r-X3j" secondAttribute="trailing" id="ngH-AA-MvT"/>
+                            <constraint firstItem="a9o-Yy-cDs" firstAttribute="top" secondItem="38m-bV-ZSh" secondAttribute="top" id="qIl-Lu-QU0"/>
+                            <constraint firstItem="a9o-Yy-cDs" firstAttribute="trailing" secondItem="le7-0r-X3j" secondAttribute="trailing" id="rhO-o1-FxZ"/>
+                            <constraint firstItem="a9o-Yy-cDs" firstAttribute="bottom" secondItem="le7-0r-X3j" secondAttribute="bottom" id="up8-uE-acz"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="le7-0r-X3j"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="UIY-Ye-Ihe" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="420" y="158.77061469265368"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="SplashScreen_05" width="750" height="1333"/>
+    </resources>
+</document>

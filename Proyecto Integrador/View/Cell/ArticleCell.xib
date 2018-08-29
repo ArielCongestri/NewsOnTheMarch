@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="articleTableViewCell" rowHeight="118" id="eNF-79-o5f" customClass="ArticleTableViewCell" customModule="Proyecto_Integrador" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="425" height="118"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="eNF-79-o5f" id="7Lu-Po-g67">
+                <rect key="frame" x="0.0" y="0.0" width="425" height="117.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Oo4-b1-S3P">
+                        <rect key="frame" x="20" y="8" width="100" height="100"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="100" id="XC1-Ay-RtD"/>
+                            <constraint firstAttribute="height" constant="100" id="y5L-gE-jAE"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="titleLabel" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ka3-Xr-PRI">
+                        <rect key="frame" x="130" y="11" width="251" height="17"/>
+                        <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="14"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="5iW-Ug-zf1">
+                        <rect key="frame" x="130" y="83.5" width="61.5" height="23.5"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="sourceLabel" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xba-q5-kiA">
+                                <rect key="frame" x="0.0" y="0.0" width="61.5" height="13"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="11"/>
+                                <color key="textColor" red="0.26051741839999998" green="0.2605243921" blue="0.260520637" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="publishedLabel" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UZl-HD-WHK">
+                                <rect key="frame" x="0.0" y="13" width="61.5" height="10.5"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="9"/>
+                                <color key="textColor" red="0.37055522200000002" green="0.37056469920000001" blue="0.37055957319999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                    </stackView>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qqF-bI-w31">
+                        <rect key="frame" x="381" y="11" width="20" height="20"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="20" id="S0f-UB-A4g"/>
+                            <constraint firstAttribute="height" constant="20" id="ezy-4m-fYR"/>
+                        </constraints>
+                        <color key="tintColor" red="0.4756349325" green="0.47564673419999998" blue="0.47564041610000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <state key="normal" image="readLater">
+                            <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </state>
+                        <connections>
+                            <action selector="saveArticleButtonPressed:" destination="eNF-79-o5f" eventType="touchUpInside" id="5YR-8P-dGE"/>
+                        </connections>
+                    </button>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="Ka3-Xr-PRI" firstAttribute="top" secondItem="7Lu-Po-g67" secondAttribute="topMargin" id="8uK-Uf-Mey"/>
+                    <constraint firstItem="5iW-Ug-zf1" firstAttribute="leading" secondItem="Oo4-b1-S3P" secondAttribute="trailing" constant="10" id="GEq-O2-8ic"/>
+                    <constraint firstItem="Oo4-b1-S3P" firstAttribute="leading" secondItem="7Lu-Po-g67" secondAttribute="leadingMargin" id="Ibm-L2-dlY"/>
+                    <constraint firstItem="Ka3-Xr-PRI" firstAttribute="leading" secondItem="Oo4-b1-S3P" secondAttribute="trailing" constant="10" id="L4v-gU-ccz"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="5iW-Ug-zf1" secondAttribute="bottom" id="PzS-rQ-lHN"/>
+                    <constraint firstItem="qqF-bI-w31" firstAttribute="leading" secondItem="Ka3-Xr-PRI" secondAttribute="trailing" id="W3u-pP-vmw"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="qqF-bI-w31" secondAttribute="trailing" constant="4" id="qAK-XT-BTW"/>
+                    <constraint firstItem="Oo4-b1-S3P" firstAttribute="top" secondItem="7Lu-Po-g67" secondAttribute="top" constant="8" id="sW8-1l-yxx"/>
+                    <constraint firstItem="qqF-bI-w31" firstAttribute="top" secondItem="Ka3-Xr-PRI" secondAttribute="top" id="sn7-9U-CK5"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="imageLabel" destination="Oo4-b1-S3P" id="ngj-Dh-Pwc"/>
+                <outlet property="publishedLabel" destination="UZl-HD-WHK" id="DjI-EZ-mBp"/>
+                <outlet property="saveArticleButtonLabel" destination="qqF-bI-w31" id="M63-6W-aGl"/>
+                <outlet property="sourceLabel" destination="xba-q5-kiA" id="jZE-ZW-Qos"/>
+                <outlet property="titleLabel" destination="Ka3-Xr-PRI" id="Wxg-qH-VWk"/>
+            </connections>
+            <point key="canvasLocation" x="44.5" y="27"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="readLater" width="512" height="512"/>
+    </resources>
+</document>
